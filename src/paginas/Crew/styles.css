@@ -1,0 +1,257 @@
+.crewPage,
+.crewPageHidden {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url("/public/assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-position: center; */
+}
+.crewflex {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 6rem;
+}
+.crewSectionInfo {
+  margin-left: 140px;
+  /* margin-top: 10rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 800px; */
+  height: 70vh;
+}
+
+.subtitBlockMobile {
+  display: none;
+}
+
+.subtituloMeet {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subtituloMeet span {
+  opacity: 0.25;
+  margin-right: 24px;
+}
+
+.infoCrew {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 1rem;
+}
+
+.infoCrew h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  width: 614px;
+  line-height: 64px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.infoCrew h3 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.infoCrew p {
+  width: 444px;
+}
+.bolinhaFlex {
+  display: flex;
+  gap: 1rem;
+}
+
+.bolinhaSlide {
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.17;
+}
+.bolinhaSlide:hover {
+  opacity: 1;
+}
+#opaco {
+  opacity: 1 !important;
+}
+
+.imgCrew {
+  position: absolute;
+  bottom: 0px;
+  right: 130px;
+  overflow: hidden;
+  height: 75%;
+  width: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  .infoCrew h2 {
+    font-size: 46px;
+    width: 400px;
+  }
+  .infoCrew p {
+    width: 300px;
+  }
+
+  .imgCrew {
+    right: 30px;
+    height: 70%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .crewSectionInfo {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .crewPage,
+  .crewPageHidden {
+    background-image: url("/public/assets/crew/background-crew-tablet.jpg");
+  }
+
+  .crewflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subtituloMeet {
+    margin-left: 40px;
+  }
+
+  .infoCrew h2 {
+    font-size: 40px;
+    line-height: 46px;
+    width: auto;
+  }
+
+  .crewSectionInfo {
+    margin: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    height: auto;
+    /* gap: 60px; */
+  }
+  .infoCrew {
+    align-self: center;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .infoCrew p,
+  .infoCrew h2,
+  .infoCrew h3 {
+    width: auto;
+  }
+  .infoCrew p {
+    margin: 0 20px;
+  }
+
+  .bolinhaFlex {
+    align-self: center;
+    margin-top: 40px;
+  }
+
+  .sectionImgCrew {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .imgCrew {
+    position: static;
+    width: 456.37px;
+    height: 572px;
+    left: 155.85px;
+    top: 492px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crewPage,
+  .crewPageHidden {
+    background-image: url("/public/assets/crew/background-crew-mobile.jpg");
+  }
+
+  .crewSectionInfo {
+    order: 1;
+  }
+  .subtitBlockMobile {
+    display: block;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+  .subtitBlockMobile span {
+    margin-right: 16px;
+    opacity: 0.25;
+  }
+  .crewflex {
+    margin-top: 34px;
+  }
+
+  .subtituloMeet {
+    display: none;
+  }
+  .sectionImgCrew {
+    width: 90%;
+    border-bottom: 2px solid #383b4b;
+    display: flex;
+    order: 0;
+  }
+
+  .imgCrew {
+    width: 327px;
+    width: auto;
+    height: 222px;
+  }
+
+  .infoCrew {
+    width: auto;
+    order: 4;
+  }
+  .infoCrew h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .infoCrew h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .infoCrew p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 24px;
+    margin-bottom: 70px;
+  }
+}

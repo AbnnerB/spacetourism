@@ -1,0 +1,65 @@
+.infoHome {
+  width: 450px;
+}
+
+.infoHome h3 {
+  margin-top: 3rem;
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
+}
+
+.infoHome h2 {
+  font-size: 150px;
+  font-weight: 400;
+  font-family: "Bellefair";
+}
+
+.infoHome p,
+.infoCrew p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+@media screen and (max-width: 970px) {
+  .infoHome h3 {
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+  .infoHome h2 {
+    line-height: 150px;
+  }
+
+  .infoHome p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .infoHome {
+    width: auto;
+  }
+
+  .infoHome h3 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .infoHome h2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .infoHome p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 10px;
+  }
+}

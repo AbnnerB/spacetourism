@@ -1,0 +1,19 @@
+.container {
+  margin-top: 15rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    text-align: center;
+  }
+}

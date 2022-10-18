@@ -1,0 +1,93 @@
+.infoDestino {
+  width: 445px;
+  color: #ffffff;
+}
+.infoDestino h2 {
+  margin-top: 37px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+}
+.informacoesPlanet {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #383b4b;
+}
+
+.tempoDistancia {
+  display: flex;
+  gap: 111px;
+  margin-top: 28px;
+}
+
+.tempoDistancia h3 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  margin-bottom: 12px;
+}
+
+.tempoDistancia p {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1250px) {
+  .infoDestino {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .infoDestino {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .infoDestino h2 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  .informacoesPlanet {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .tempoDistancia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 62px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tempoDistancia {
+    flex-direction: column;
+    margin-bottom: 58px;
+    gap: 32px;
+  }
+  .infoDestino h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}

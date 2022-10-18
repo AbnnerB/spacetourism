@@ -1,0 +1,78 @@
+.destinationPage,
+.destinationPageHidden {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url("/public/assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.destinoConteudo {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 160px;
+  margin-left: 140px;
+  gap: 157px;
+  align-items: center;
+}
+
+.botoesAlterar {
+  display: flex;
+  gap: 36px;
+}
+
+.botoesAlterar button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 2.700000047683716px;
+  text-align: left;
+  padding: 1rem 0;
+}
+.botoesAlterar button:hover {
+  border-bottom: 2px solid #ffffff;
+  transition: 0.1s linear;
+}
+
+.linhaMarcacaoBotao {
+  border-bottom: 2px solid #ffffff !important;
+}
+
+@media screen and (max-width: 1250px) {
+  .destinoConteudo {
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .destinationPage,
+  .destinationPageHidden {
+    background-image: url("/public/assets/destination/background-destination-tablet.jpg");
+  }
+
+  .destinoConteudo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    gap: 0px;
+  }
+
+  .botoesAlterar {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .botoesAlterar {
+    gap: 15px;
+  }
+}

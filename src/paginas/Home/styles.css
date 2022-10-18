@@ -1,0 +1,23 @@
+.home,
+.homeHidden {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/public/assets/homeImg/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 970px) {
+  .home,
+  .homeHidden {
+    background-image: url("/public/assets/homeImg/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home,
+  .homeHidden {
+    background-image: url("/public/assets/homeImg/background-home-mobile.jpg");
+  }
+}

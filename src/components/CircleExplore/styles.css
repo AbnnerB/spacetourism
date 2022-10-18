@@ -1,0 +1,43 @@
+.circleExplore {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  color: #0b0d17;
+}
+.circleExplore p {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+}
+
+.circleExplore:hover {
+  color: #ffffff !important;
+  background-color: #0b0d17;
+  transition: 1.2s;
+}
+
+@media screen and (max-width: 970px) {
+  .circleExplore {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .circleExplore {
+    width: 150px;
+    height: 150px;
+    left: 113px;
+    top: 469px;
+  }
+  .circleExplore p {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
+}

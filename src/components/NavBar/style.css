@@ -1,0 +1,191 @@
+header {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  color: white;
+  position: relative;
+}
+
+.logoTopo {
+  margin-left: 55px;
+}
+.classeFake {
+  display: none;
+}
+
+.linhaTopo {
+  width: 35%;
+  position: absolute;
+  border-top: 1px solid #ffffff44;
+  left: 140px;
+  z-index: 2;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.navBar {
+  width: 57%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navBar a,
+.navBar2 a {
+  padding: 1rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+/* Somente posicionando os links na pagina*/
+.marginLeftPrimeiroLink {
+  margin-left: 7rem;
+}
+
+.navBar a span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* colocando a linha em baixo do link */
+.linkTopo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linkTopo:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.linhaNavHome {
+  border-bottom: 2px solid white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* colocando a linha em baixo do link */
+
+@media screen and (max-width: 970px) {
+  header {
+    padding-top: 0px;
+    align-items: center;
+  }
+
+  .logoTopo {
+    margin-left: 38px;
+    margin-top: 8px;
+  }
+
+  .linhaTopo {
+    display: none;
+  }
+
+  .linkTopo a span {
+    display: none;
+  }
+
+  .marginLeftPrimeiroLink {
+    margin-left: 1rem;
+  }
+  .navBar a {
+    padding: 0;
+    font-size: 14px;
+  }
+  .navBar {
+    width: 60%;
+    display: flex;
+    gap: 0rem;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoTopo {
+    margin-left: 24px;
+  }
+  .logoTopo img {
+    width: 24px;
+  }
+
+  .menuIcon {
+    display: block;
+    z-index: 6;
+    margin-right: 24px;
+  }
+
+  .navBar2 {
+    z-index: 5;
+    position: absolute;
+    width: 65%;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    padding-top: 150px;
+    padding-bottom: 3000px;
+  }
+
+  .marginLeftPrimeiroLink {
+    margin-left: 0px;
+  }
+
+  .linkTopo a {
+    display: flex;
+  }
+
+  .linkTopo a span {
+    display: block;
+    margin-right: 10px;
+    margin-left: 32px;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .linhaNavHome {
+    width: 65%;
+    border: 2px solid white;
+    border-radius: 0px 0px 5px 0px;
+  }
+  .linkTopo:hover {
+    border-bottom: 0px solid #ffffff;
+  }
+
+  .homeHidden,
+  .destinationPageHidden,
+  .crewPageHidden,
+  .techPageHidden {
+    overflow: hidden !important;
+  }
+
+  .classeFake {
+    display: none;
+  }
+
+  .telaEscura {
+    position: absolute;
+    width: 100%;
+    height: 500vh;
+    background-color: rgba(0, 0, 0, 0.253);
+  }
+}
