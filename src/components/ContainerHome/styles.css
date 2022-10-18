@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: flex-end;
   gap: 5rem;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {

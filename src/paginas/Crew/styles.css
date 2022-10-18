@@ -6,7 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-position: center; */
 }
 .crewflex {
   display: flex;
@@ -16,11 +15,9 @@
 }
 .crewSectionInfo {
   margin-left: 140px;
-  /* margin-top: 10rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 800px; */
   height: 70vh;
 }
 
@@ -46,7 +43,6 @@
   width: 500px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 1rem;
 }
 
@@ -155,7 +151,6 @@
     width: 100%;
     justify-content: flex-start;
     height: auto;
-    /* gap: 60px; */
   }
   .infoCrew {
     align-self: center;
